@@ -247,8 +247,23 @@
   .package-note{text-align:center;margin-top:18px;font-size:0.82rem;color:var(--muted);}
   .sample-boq-box{
     margin-top:34px;background:var(--white);border:1px solid var(--line);
-    padding:26px 30px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+    padding:26px 30px;display:flex;flex-direction:column;gap:22px;
   }
+  .sample-preview-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;
+  }
+  .sample-preview-grid a{
+    display:block;border:1px solid var(--line);overflow:hidden;background:var(--paper-2);
+    transition:0.2s;
+  }
+  .sample-preview-grid a:hover{border-color:var(--brick);transform:translateY(-2px);}
+  .sample-preview-grid img{width:100%;height:210px;object-fit:cover;object-position:top;display:block;}
+  .sample-preview-grid .cap{
+    padding:8px 10px;font-family:var(--mono);font-size:0.68rem;color:var(--muted);background:var(--white);
+    border-top:1px solid var(--line);
+  }
+  .sample-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+
 
   /* Testimonials */
   .testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
@@ -647,7 +662,7 @@
       <div class="package-card featured ticked">
         <span class="stamp">POPULAR</span>
         <h3>Full home interiors</h3>
-        <div class="price mono">₹1,200<span> / sq.ft*</span></div>
+        <div class="price mono">₹1,200<span> / sq.ft onwards*</span></div>
         <ul>
           <li>3D design + working drawings</li>
           <li>Modular kitchen &amp; wardrobes</li>
@@ -658,16 +673,16 @@
         <a href="https://wa.me/919952406705?text=Hi%2C%20I%20need%20Full%20Home%20Interiors%20package" class="btn btn-block" target="_blank">Get quote</a>
       </div>
       <div class="package-card">
-        <h3>BOQ + BBS + design</h3>
-        <div class="price mono">₹8,000<span> onwards</span></div>
+        <h3>BOQ + BBS</h3>
+        <div class="price mono">₹5,000<span> onwards</span></div>
         <ul>
           <li>Complete BOQ &amp; cost estimate</li>
-          <li>Bar Bending Schedule</li>
-          <li>2D / 3D planning</li>
-          <li>Structural design support</li>
-          <li>Plan approval guidance</li>
+          <li>Bar Bending Schedule (BBS)</li>
+          <li>Quantity take-off</li>
+          <li>Material schedule</li>
+          <li>Excel + PDF deliverables</li>
         </ul>
-        <a href="https://wa.me/919952406705?text=Hi%2C%20I%20need%20BOQ%20%2B%20BBS%20%2B%20Design%20package" class="btn btn-block" target="_blank">Get quote</a>
+        <a href="https://wa.me/919952406705?text=Hi%2C%20I%20need%20BOQ%20%2B%20BBS%20package" class="btn btn-block" target="_blank">Get quote</a>
       </div>
     </div>
     <p class="package-note">*Indicative rates. Actual pricing depends on material selection, area and scope. Contact for accurate quote.</p>
@@ -675,11 +690,33 @@
       <div>
         <div class="eyebrow" style="margin-bottom:6px;">Sample deliverables</div>
         <h3 style="font-size:1.05rem; color:var(--ink); margin-bottom:4px;">View real samples before you order</h3>
-        <p style="color:var(--muted); font-size:0.9rem; max-width:48ch;">See how our BOQ and Quantity Take-off reports look — item-wise, professional and ready for tender / site use.</p>
+        <p style="color:var(--muted); font-size:0.9rem; max-width:60ch;">Preview pages from our Quantity Take-off report. Item-wise, professional and ready for tender / site use. Click any page to enlarge.</p>
       </div>
-      <div style="display:flex; flex-direction:column; gap:10px; align-items:flex-end;">
-        <a href="sample-boq.pdf" target="_blank" class="btn btn-outline" style="white-space:nowrap;">View sample BOQ (PDF)</a>
-        <a href="sample-quantity-takeoff.pdf" target="_blank" class="btn btn-outline" style="white-space:nowrap;">View sample Quantity Take-off (PDF)</a>
+      <div class="sample-preview-grid">
+        <a href="samples/qto-page-01.jpg" target="_blank">
+          <img src="samples/qto-page-01.jpg" alt="Quantity Take-off sample page 1">
+          <div class="cap">QTO — Page 1</div>
+        </a>
+        <a href="samples/qto-page-02.jpg" target="_blank">
+          <img src="samples/qto-page-02.jpg" alt="Quantity Take-off sample page 2">
+          <div class="cap">QTO — Page 2</div>
+        </a>
+        <a href="samples/qto-page-03.jpg" target="_blank">
+          <img src="samples/qto-page-03.jpg" alt="Quantity Take-off sample page 3">
+          <div class="cap">QTO — Page 3</div>
+        </a>
+        <a href="samples/qto-page-04.jpg" target="_blank">
+          <img src="samples/qto-page-04.jpg" alt="Quantity Take-off sample page 4">
+          <div class="cap">QTO — Page 4</div>
+        </a>
+        <a href="samples/qto-page-05.jpg" target="_blank">
+          <img src="samples/qto-page-05.jpg" alt="Quantity Take-off sample page 5">
+          <div class="cap">QTO — Page 5</div>
+        </a>
+      </div>
+      <div class="sample-actions">
+        <a href="sample-boq.pdf" target="_blank" class="btn btn-outline" style="white-space:nowrap;">View full sample BOQ (PDF)</a>
+        <a href="sample-quantity-takeoff.pdf" target="_blank" class="sample-link mono">Full Quantity Take-off PDF (30 pages)</a>
       </div>
     </div>
   </div>

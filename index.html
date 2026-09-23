@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +39,6 @@
   .container{width:min(1180px,92%);margin:0 auto;}
   h1,h2,h3,h4{font-family:var(--head);font-weight:600;letter-spacing:-0.01em;}
   .mono{font-family:var(--mono);}
-
   /* corner tick marks — signature device */
   .ticked{position:relative;}
   .ticked::before,.ticked::after{
@@ -49,7 +47,6 @@
   .ticked::before{top:-1px;left:-1px;border-top:2px solid var(--brick);border-left:2px solid var(--brick);}
   .ticked::after{bottom:-1px;right:-1px;border-bottom:2px solid var(--brick);border-right:2px solid var(--brick);}
   .ticked-steel::before,.ticked-steel::after{border-color:var(--steel);}
-
   /* faint drafting grid */
   .grid-bg{
     background-image:
@@ -63,7 +60,6 @@
       linear-gradient(90deg,rgba(22,35,43,0.035) 1px,transparent 1px);
     background-size:34px 34px;
   }
-
   /* ruler divider */
   .ruler{
     height:14px;
@@ -73,7 +69,6 @@
     background-size:12px 100%;
     opacity:0.9;
   }
-
   /* Header */
   header{
     position:sticky;top:0;z-index:100;
@@ -101,7 +96,6 @@
   .btn-outline:hover{background:var(--ink);color:var(--white);}
   .btn-block{width:100%;justify-content:center;}
   .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:3px;font-size:1.1rem;padding:6px 10px;cursor:pointer;color:var(--ink);}
-
   /* Hero */
   .hero{
     background:var(--ink);
@@ -129,13 +123,11 @@
   .hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px;}
   .hero-btns .btn-outline{border-color:rgba(255,255,255,0.35);color:var(--paper);}
   .hero-btns .btn-outline:hover{background:var(--paper);color:var(--ink);}
-
   .hero-stats{display:flex;gap:0;border-top:1px solid var(--line-dark);}
   .hero-stat{flex:1;padding:18px 18px 0 0;border-right:1px solid var(--line-dark);}
   .hero-stat:last-child{border-right:none;}
   .hero-stat .n{font-family:var(--mono);font-size:1.3rem;color:var(--brick);display:block;}
   .hero-stat .l{font-size:0.78rem;color:#a8ac9f;margin-top:2px;display:block;}
-
   .hero-card{
     background:var(--paper);color:var(--text);padding:28px 26px;
     border:1px solid rgba(255,255,255,0.1);
@@ -150,14 +142,12 @@
   }
   .hero-card li:last-child{border-bottom:none;}
   .hero-card li .tag{font-family:var(--mono);font-size:0.7rem;color:var(--brick);min-width:38px;}
-
   /* Sections */
   section{padding:88px 0;}
   .section-head{margin-bottom:48px;max-width:640px;}
   .eyebrow{font-family:var(--mono);font-size:0.76rem;color:var(--brick);margin-bottom:10px;}
   .section-head h2{font-size:clamp(1.6rem,2.8vw,2.2rem);color:var(--ink);margin-bottom:10px;}
   .section-head p{color:var(--muted);font-size:1rem;}
-
   /* About */
   .about{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;}
@@ -177,7 +167,6 @@
   .owner-row .k{font-family:var(--mono);font-size:0.72rem;color:#a8ac9f;min-width:78px;padding-top:2px;}
   .owner-row a{color:var(--paper);}
   .owner-row a:hover{color:var(--brick);}
-
   /* Services */
   .services-list{border-top:1px solid var(--line);}
   .service-row{
@@ -196,7 +185,6 @@
     font-size:0.78rem;color:var(--brick);border-bottom:1px solid var(--brick);padding-bottom:2px;
   }
   .sample-link:hover{color:var(--brick-hover);border-color:var(--brick-hover);}
-
   /* Process */
   .process{background:var(--ink);color:var(--paper);}
   .process .section-head p{color:#a8ac9f;}
@@ -207,14 +195,12 @@
   .process-num{font-family:var(--mono);font-size:1.6rem;color:var(--brick);margin-bottom:14px;display:block;}
   .process-step h4{font-size:0.98rem;color:var(--white);margin-bottom:8px;}
   .process-step p{font-size:0.85rem;color:#a8ac9f;}
-
   /* Why */
   .why{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
   .why-item{background:var(--white);padding:28px 26px;}
   .why-item strong{display:block;font-family:var(--head);font-size:1.05rem;color:var(--ink);margin-bottom:8px;}
   .why-item span{font-size:0.88rem;color:var(--muted);}
-
   /* Portfolio */
   .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:2px;}
   .portfolio-item{position:relative;overflow:hidden;background:var(--ink);}
@@ -225,7 +211,6 @@
     background:linear-gradient(0deg,rgba(22,35,43,0.92),transparent);
     color:var(--paper);font-family:var(--mono);font-size:0.72rem;letter-spacing:0.01em;
   }
-
   /* Packages */
   .packages{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);}
@@ -263,14 +248,11 @@
     border-top:1px solid var(--line);
   }
   .sample-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
-
-
   /* Testimonials */
   .testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
   .testimonial-card{border-left:2px solid var(--brick);padding-left:20px;}
   .testimonial-card p{font-size:0.94rem;color:var(--text);margin-bottom:14px;}
   .testimonial-card .author{font-family:var(--mono);font-size:0.76rem;color:var(--muted);}
-
   /* FAQ */
   .faq{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .faq-list{max-width:820px;}
@@ -283,7 +265,6 @@
   .faq-item summary::after{content:'+';font-family:var(--mono);font-size:1.2rem;color:var(--brick);}
   .faq-item[open] summary::after{content:'\2212';}
   .faq-item p{padding:0 4px 20px;color:var(--muted);font-size:0.92rem;max-width:70ch;}
-
   /* Contact */
   .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;}
   .contact-info p{color:var(--muted);margin-bottom:22px;font-size:0.95rem;}
@@ -303,7 +284,6 @@
     outline:none;border-color:var(--brick);background:var(--white);
   }
   .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-
   /* Footer */
   footer{background:var(--ink);color:#a8ac9f;padding:52px 0 26px;}
   .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;margin-bottom:32px;}
@@ -317,7 +297,6 @@
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
     font-family:var(--mono);font-size:0.74rem;color:#7d8175;
   }
-
   /* WhatsApp float */
   .wa-float{
     position:fixed;bottom:22px;right:22px;z-index:99;
@@ -327,7 +306,6 @@
   }
   .wa-float:hover{transform:scale(1.08);}
   .wa-float svg{width:26px;height:26px;}
-
   @media(max-width:900px){
     .nav-links{display:none;}
     .menu-btn{display:block;}
@@ -350,7 +328,6 @@
 </style>
 </head>
 <body>
-
 <header>
   <div class="container nav">
     <a href="#" class="brand">
@@ -369,7 +346,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <div style="display:flex; gap:10px; align-items:center;">
-      <a href="https://wa.me/919952406705" class="btn" target="_blank">WhatsApp Quote</a>
+      <a href="https://wa.me/916381433779" class="btn" target="_blank">WhatsApp Quote</a>
       <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
     </div>
   </div>
@@ -382,7 +359,6 @@
     <a href="#contact" style="padding:10px 0;">Contact</a>
   </nav>
 </header>
-
 <!-- Hero -->
 <section class="hero grid-bg">
   <div class="container hero-inner">
@@ -392,7 +368,7 @@
         <h1>Professional estimation &amp; interiors, planned with precision.</h1>
         <p>Led by Balasurwin B.E. Civil Estimation Engineer &amp; Balasethu B.Arch — delivering precise BOQ, cost estimation, quantity take-off, Bar Bending Schedule, structural design, architectural planning and complete interior design &amp; execution from Trichy, Tamil Nadu.</p>
         <div class="hero-btns">
-          <a href="https://wa.me/919952406705" class="btn" target="_blank">Get free quote on WhatsApp</a>
+          <a href="https://wa.me/916381433779" class="btn" target="_blank">Get free quote on WhatsApp</a>
           <a href="#services" class="btn btn-outline">View services</a>
         </div>
       </div>
@@ -416,7 +392,6 @@
   </div>
 </section>
 <div class="ruler"></div>
-
 <!-- About -->
 <section class="about" id="about">
   <div class="container about-grid">
@@ -437,14 +412,13 @@
     <div class="owner-card ticked">
       <div class="role">Civil Estimation Engineer &amp; Architect</div>
       <h3>Balasurwin B.E. Civil Estimation Engineer &amp; Balasethu B.Arch</h3>
-      <div class="owner-row"><span class="k">Phone</span><div>+91 99524 06705 <span style="color:#a8ac9f;">(WhatsApp)</span></div></div>
+      <div class="owner-row"><span class="k">Phone</span><div>+91 6381433779 <span style="color:#a8ac9f;">(WhatsApp)</span></div></div>
       <div class="owner-row"><span class="k">Email</span><div><a href="mailto:sayoninteriorsandconst666@gmail.com">sayoninteriorsandconst666@gmail.com</a></div></div>
       <div class="owner-row"><span class="k">LinkedIn</span><div><a href="https://linkedin.com/in/sayon-surwin-642563202" target="_blank">linkedin.com/in/sayon-surwin-642563202</a></div></div>
       <div class="owner-row"><span class="k">Address</span><div>No. 87, Tamil Nadu Cooperative Officers Colony, Ashok Nagar South East Extension, Karumandapam, Trichy – 620001</div></div>
     </div>
   </div>
 </section>
-
 <!-- Services -->
 <section id="services">
   <div class="container">
@@ -454,7 +428,6 @@
       <p>Six services, one point of contact — from the first estimate to the final finish.</p>
     </div>
     <div class="services-list">
-
       <div class="service-row">
         <div class="idx mono">01</div>
         <div class="service-head">
@@ -470,7 +443,6 @@
           <li>3D design + detailed interior estimate</li>
         </ul>
       </div>
-
       <div class="service-row">
         <div class="idx mono">02</div>
         <div class="service-head">
@@ -485,7 +457,6 @@
           <li>Detailed working drawings</li>
         </ul>
       </div>
-
       <div class="service-row">
         <div class="idx mono">03</div>
         <div class="service-head">
@@ -500,7 +471,6 @@
           <li>Coordination with contractors</li>
         </ul>
       </div>
-
       <div class="service-row">
         <div class="idx mono">04</div>
         <div class="service-head">
@@ -515,7 +485,6 @@
           <li>Technical coordination</li>
         </ul>
       </div>
-
       <div class="service-row">
         <div class="idx mono">05</div>
         <div class="service-head">
@@ -532,7 +501,6 @@
         </ul>
         <a href="sample-boq.pdf" target="_blank" class="sample-link mono">↓ View sample BOQ (G+2 residential)</a>
       </div>
-
       <div class="service-row">
         <div class="idx mono">06</div>
         <div class="service-head">
@@ -548,11 +516,9 @@
         </ul>
         <a href="sample-quantity-takeoff.pdf" target="_blank" class="sample-link mono">↓ View sample Quantity Take-off</a>
       </div>
-
     </div>
   </div>
 </section>
-
 <!-- Process -->
 <section class="process grid-bg" id="process">
   <div class="container">
@@ -590,7 +556,6 @@
     </div>
   </div>
 </section>
-
 <!-- Why -->
 <section class="why" id="why">
   <div class="container">
@@ -608,7 +573,6 @@
     </div>
   </div>
 </section>
-
 <!-- Portfolio -->
 <section id="portfolio">
   <div class="container">
@@ -637,7 +601,6 @@
     </div>
   </div>
 </section>
-
 <!-- Packages -->
 <section class="packages" id="packages">
   <div class="container">
@@ -657,7 +620,7 @@
           <li>Excel + PDF report</li>
           <li>1 revision included</li>
         </ul>
-        <a href="https://wa.me/919952406705?text=Hi%2C%20I%20need%20Estimation%20Only%20package" class="btn btn-block" target="_blank">Get quote</a>
+        <a href="https://wa.me/916381433779?text=Hi%2C%20I%20need%20Estimation%20Only%20package" class="btn btn-block" target="_blank">Get quote</a>
       </div>
       <div class="package-card featured ticked">
         <span class="stamp">POPULAR</span>
@@ -670,7 +633,7 @@
           <li>Material guidance (BWP/HDHMR)</li>
           <li>Site execution support</li>
         </ul>
-        <a href="https://wa.me/919952406705?text=Hi%2C%20I%20need%20Full%20Home%20Interiors%20package" class="btn btn-block" target="_blank">Get quote</a>
+        <a href="https://wa.me/916381433779?text=Hi%2C%20I%20need%20Full%20Home%20Interiors%20package" class="btn btn-block" target="_blank">Get quote</a>
       </div>
       <div class="package-card">
         <h3>BOQ + BBS</h3>
@@ -682,13 +645,12 @@
           <li>Material schedule</li>
           <li>Excel + PDF deliverables</li>
         </ul>
-        <a href="https://wa.me/919952406705?text=Hi%2C%20I%20need%20BOQ%20%2B%20BBS%20package" class="btn btn-block" target="_blank">Get quote</a>
+        <a href="https://wa.me/916381433779?text=Hi%2C%20I%20need%20BOQ%20%2B%20BBS%20package" class="btn btn-block" target="_blank">Get quote</a>
       </div>
     </div>
     <p class="package-note">*Indicative rates. Actual pricing depends on material selection, area and scope. Contact for accurate quote.</p>
   </div>
 </section>
-
 <!-- Testimonials -->
 <section id="testimonials">
   <div class="container">
@@ -702,7 +664,7 @@
         <div class="author">RESIDENTIAL CLIENT, TRICHY</div>
       </div>
       <div class="testimonial-card">
-        <p>"Modular kitchen and wardrobe work came out exactly as discussed. Quality of finish and hardware is good. Recommended."</p>
+        <p>"Modular kitchen andwardrobe work came out exactly as discussed. Quality of finish and hardware is good. Recommended."</p>
         <div class="author">HOMEOWNER, KARUMANDAPAM</div>
       </div>
       <div class="testimonial-card">
@@ -712,7 +674,6 @@
     </div>
   </div>
 </section>
-
 <!-- FAQ -->
 <section class="faq" id="faq">
   <div class="container">
@@ -743,12 +704,11 @@
       </details>
       <details class="faq-item">
         <summary>How do I get a free quote?</summary>
-        <p>WhatsApp or call +91 99524 06705, or use the contact form on this site. Share your drawings or project brief and we will respond with next steps and indicative pricing.</p>
+        <p>WhatsApp or call +91 6381433779, or use the contact form on this site. Share your drawings or project brief and we will respond with next steps and indicative pricing.</p>
       </details>
     </div>
   </div>
 </section>
-
 <!-- Contact -->
 <section id="contact">
   <div class="container contact-grid">
@@ -756,13 +716,13 @@
       <div class="eyebrow">Contact</div>
       <h2 style="margin-bottom:14px;">Get in touch</h2>
       <p>Share your drawings or project details — we will respond quickly.</p>
-      <div class="info-row"><span class="k">WhatsApp</span><div><a href="https://wa.me/919952406705">+91 99524 06705</a></div></div>
+      <div class="info-row"><span class="k">WhatsApp</span><div><a href="https://wa.me/916381433779">+91 6381433779</a></div></div>
       <div class="info-row"><span class="k">Email</span><div><a href="mailto:sayoninteriorsandconst666@gmail.com">sayoninteriorsandconst666@gmail.com</a></div></div>
       <div class="info-row"><span class="k">LinkedIn</span><div><a href="https://linkedin.com/in/sayon-surwin-642563202" target="_blank">linkedin.com/in/sayon-surwin-642563202</a></div></div>
       <div class="info-row"><span class="k">Address</span><div>No. 87, Tamil Nadu Cooperative Officers Colony, Ashok Nagar South East Extension, Karumandapam, Trichy – 620001</div></div>
     </div>
     <div class="contact-form ticked-steel ticked">
-      <form onsubmit="event.preventDefault(); window.open('https://wa.me/919952406705?text=' + encodeURIComponent('Hello Balasurwin / Balasethu, I need a quote for: ' + document.getElementById('service').value + '%0AName: ' + document.getElementById('name').value + '%0APhone: ' + document.getElementById('phone').value + '%0ADetails: ' + document.getElementById('msg').value), '_blank');">
+      <form onsubmit="event.preventDefault(); window.open('https://wa.me/916381433779?text=' + encodeURIComponent('Hello Balasurwin / Balasethu, I need a quote for: ' + document.getElementById('service').value + '%0AName: ' + document.getElementById('name').value + '%0APhone: ' + document.getElementById('phone').value + '%0ADetails: ' + document.getElementById('msg').value), '_blank');">
         <div class="form-row">
           <div class="form-group">
             <label>Your name *</label>
@@ -798,7 +758,6 @@
     </div>
   </div>
 </section>
-
 <!-- Footer -->
 <footer>
   <div class="container">
@@ -822,7 +781,7 @@
       <div>
         <h4>CONTACT</h4>
         <ul class="footer-links">
-          <li><a href="https://wa.me/919952406705">+91 99524 06705</a></li>
+          <li><a href="https://wa.me/916381433779">+91 6381433779</a></li>
           <li><a href="mailto:sayoninteriorsandconst666@gmail.com">Email us</a></li>
           <li><a href="https://linkedin.com/in/sayon-surwin-642563202" target="_blank">LinkedIn</a></li>
         </ul>
@@ -834,17 +793,14 @@
     </div>
   </div>
 </footer>
-
-<a href="https://wa.me/919952406705" class="wa-float" target="_blank" title="Chat on WhatsApp">
+<a href="https://wa.me/916381433779" class="wa-float" target="_blank" title="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="white"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36c1.46.8 3.1 1.22 4.83 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.53 2 12.03 2zm5.83 14.2c-.24.68-1.4 1.3-1.94 1.36-.5.06-1.13.08-1.83-.12-.42-.12-.96-.3-1.66-.6-2.92-1.26-4.83-4.2-4.98-4.4-.14-.2-1.2-1.6-1.2-3.05 0-1.46.76-2.17 1.03-2.47.26-.3.58-.36.77-.36.2 0 .38 0 .55.01.18.01.42-.07.65.5.24.6.82 2.06.9 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.3.38-.44.5-.15.15-.3.3-.13.6.17.3.75 1.24 1.62 2 .2.18.6.4 1.03.6.35.15.6.15.8-.05.14-.14.6-.66.75-.9.16-.23.3-.2.5-.12.2.08 1.28.6 1.5.72.22.1.36.16.42.25.06.1.06.55-.18 1.23z"/></svg>
 </a>
-
 <script>
   document.getElementById('menuBtn').addEventListener('click', function(){
     var nav = document.getElementById('mobileNav');
     nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
   });
 </script>
-
 </body>
 </html>
